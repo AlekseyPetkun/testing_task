@@ -1,4 +1,4 @@
-package com.gridnine.testing;
+package com.gridnine.testing.model;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -15,7 +15,7 @@ public class Segment {
 
     private final LocalDateTime arrivalDate;
 
-    Segment(final LocalDateTime dep, final LocalDateTime arr) {
+    public Segment(final LocalDateTime dep, final LocalDateTime arr) {
         departureDate = Objects.requireNonNull(dep);
         arrivalDate = Objects.requireNonNull(arr);
     }
