@@ -12,31 +12,18 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // изначальный список перелетов, сгенерированный фабрикой FlightBuilder
         allFlightList();
 
+        // вывод перелетов с актуальными датами вылетов
         removeFlightUpToTheCurrentPointInTime();
 
+        // вывод перелетов без сегментов с датой прилёта раньше даты вылета
         removeSegmentsWithAnArrivalDateEarlierThanTheDepartureDate();
 
+        // вывод перелетов без пересадок и/или с пересадками не более 2-х часов
         removeTimeSpentOnEarthExceedsTwoHours();
-
-//        List<Flight> flightList = FlightBuilder.createFlights();
-//
-//        FilterServiceImpl filterService = new FilterServiceImpl();
-
-//        separator();
-//        System.out.println(flightList);
-
-//        separator();
-//        System.out.println(filterService.removeFlightUpToTheCurrentPointInTime(flightList));
-
-//        separator();
-//        System.out.println(filterService.removeSegmentsWithAnArrivalDateEarlierThanTheDepartureDate(flightList));
-
-//        separator();
-//        System.out.println(filterService.removeTimeSpentOnEarthExceedsTwoHours(flightList));
     }
-
 
 
     private static void allFlightList() {
