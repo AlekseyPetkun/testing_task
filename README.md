@@ -1,4 +1,4 @@
-![Pan American] (https://github.com/Aleksey2710/testing_task/blob/master/QzCmw2u.jpg)
+![pan american](https://github.com/Aleksey2710/testing_task/blob/master/QzCmw2u.jpg)
 
 ## Задача ##
 
