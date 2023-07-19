@@ -14,7 +14,9 @@ import java.util.List;
 public class FlightBuilder {
 
     public static List<Flight> createFlights() {
+
         LocalDateTime threeDaysFromNow = LocalDateTime.now().plusDays(3);
+
         return Arrays.asList(
                 //A normal flight with two hour duration
                 createFlight(threeDaysFromNow, threeDaysFromNow.plusHours(2)),
@@ -31,6 +33,10 @@ public class FlightBuilder {
                 //Another flight with more than two hours ground time
                 createFlight(threeDaysFromNow, threeDaysFromNow.plusHours(2),
                         threeDaysFromNow.plusHours(3), threeDaysFromNow.plusHours(4),
+                        threeDaysFromNow.plusHours(6), threeDaysFromNow.plusHours(7)),
+                //если дата прилёта раньше даты вылета не в первом сегменте
+                createFlight(threeDaysFromNow, threeDaysFromNow.plusHours(2),
+                        threeDaysFromNow.plusHours(3), threeDaysFromNow.minusHours(12),
                         threeDaysFromNow.plusHours(6), threeDaysFromNow.plusHours(7)));
     }
 

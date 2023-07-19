@@ -20,11 +20,11 @@ public class Segment {
         arrivalDate = Objects.requireNonNull(arr);
     }
 
-    LocalDateTime getDepartureDate() {
+    public LocalDateTime getDepartureDate() {
         return departureDate;
     }
 
-    LocalDateTime getArrivalDate() {
+    public LocalDateTime getArrivalDate() {
         return arrivalDate;
     }
 
