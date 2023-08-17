@@ -20,4 +20,4 @@
 
 ##
 
-  *Выполнил задание - [Алексей Петкун](https://github.com/Aleksey2710 "Aleksey2710")*
+  *Выполнил задание - [Алексей Петкун](https://github.com/AlekseyPetkun "AlekseyPetkun")*
